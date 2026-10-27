@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Turn your commercial cleaning walkthrough notes into polished proposals, clear pricing, and thoughtful follow-ups. Try Bidwell free.">
+<meta name="theme-color" content="#183e35"><title>Bidwell — A better bid. A bigger business.</title>
+<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+<a class="brand" href="#workspace" aria-label="Bidwell home"><span class="brand-icon">b<span>✦</span></span>bidwell<span class="brand-dot">.</span></a>
+<div class="workspace-label"><span class="workspace-avatar">Y</span><div>Your workspace<small>Commercial cleaning</small></div><span class="chevron">⌄</span></div>
+<button class="new-button" data-action="new"><span>＋</span> New proposal <kbd>N</kbd></button>
+<div class="nav-label">WORKSPACE</div>
+<nav aria-label="Main navigation">
+<button class="nav-item active" data-view="workspace"><span>✧</span> Proposal studio</button>
+<button class="nav-item" data-view="saved"><span>▤</span> My proposals <span class="count" id="saved-count">0</span></button>
+<button class="nav-item" data-view="templates"><span>▦</span> Template library <span class="new-tag">NEW</span></button>
+</nav>
+<div class="sidebar-note"><span class="mini-spark">✦</span><p>Less paperwork.<br><strong>More possibilities.</strong></p><div class="note-line"></div><small>Built for the people who<br>make spaces shine.</small></div>
+<div class="sidebar-bottom"><div class="upgrade-card"><span class="eyebrow">YOUR NEXT CHAPTER</span><h3>Big ambitions?<br>Let’s build your bid system.</h3><button data-action="plans">Explore launch package <span>↗</span></button></div><button class="profile" data-action="profile"><span class="profile-avatar">YB</span><span>Your business<small>Business profile</small></span><span>⚙</span></button></div>
+</aside>
+<div class="main-shell">
+<header class="topbar"><div><span class="breadcrumb">Workspace</span><span class="slash">/</span><span id="page-name">Proposal studio</span></div><div class="topbar-right"><span class="demo-badge" id="mode-badge"><i></i> Free template mode</span><button class="text-button" data-action="help">How it works <span>↗</span></button></div></header>
+<main>
+<section id="workspace-view" class="view">
+<div class="intro"><div><div class="eyebrow green"><span class="tiny-star">✦</span> YOUR NEXT CONTRACT STARTS HERE</div><h1>Good work deserves<br>a <em>great proposal.</em></h1><p>Turn your walkthrough notes into a bid that means business.<br> Less time at your desk. More time growing your company.</p></div><div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-star">✦</div><div class="art-paper"><div class="paper-logo">b.</div><div class="paper-line long"></div><div class="paper-line"></div><div class="paper-line short"></div><div class="paper-box"><span>YOUR NEXT BIG WIN</span><b>It starts with a bid.</b></div><div class="paper-line"></div><div class="paper-sign">Made for your business</div></div><div class="art-check">✓</div><span class="art-dot"></span></div></div>
+<div class="studio-heading"><div><h2>What are we working on?</h2><p>Pick a starting point. We’ll take it from there.</p></div><span class="small-muted">A little detail goes a long way <span>↙</span></span></div>
+<div class="task-grid" role="group" aria-label="Document type">
+<button class="task-card selected" data-task="proposal" aria-pressed="true"><span class="task-icon">▤</span><span class="task-check">✓</span><h3>Write a proposal</h3><p>A polished bid for your next client.</p><span class="task-link">LET’S WIN THE JOB <span>↗</span></span></button>
+<button class="task-card" data-task="followup" aria-pressed="false"><span class="task-icon peach">↗</span><span class="task-check">✓</span><h3>Follow up with a lead</h3><p>The right words to keep things moving.</p><span class="task-link">KEEP THE CONVERSATION GOING <span>↗</span></span></button>
+<button class="task-card" data-task="scope" aria-pressed="false"><span class="task-icon lavender">☷</span><span class="task-check">✓</span><h3>Build a scope of work</h3><p>Clear expectations. Better relationships.</p><span class="task-link">GET EVERYONE ON THE SAME PAGE <span>↗</span></span></button>
+</div>
+<div class="editor-grid"><section class="composer"><div class="panel-title"><div><span class="circle-step">1</span><h2>Tell us about the job</h2></div><button class="text-button green" data-action="example">Try an example <span>↗</span></button></div>
+<form id="proposal-form"><label for="notes" class="sr-only">Job notes</label><textarea id="notes" required minlength="15" maxlength="5000" placeholder="Here’s the job: a 5,000 sq ft office needs cleaning 3 times a week. There are 2 restrooms, a kitchen, and mostly carpet. The client cares about eco-friendly products..." rows="5"></textarea><div class="composer-footer"><span><span class="small-spark">✧</span> Your notes. Your expertise. A better first draft.</span><span id="char-count">0 / 5,000</span></div>
+<div class="form-fields"><label>CLIENT / PROPERTY<input name="client" id="client" placeholder="e.g. Oak & Co. offices" maxlength="100" required></label><label>MONTHLY PRICE ($)<input name="price" id="price" type="number" min="1" max="1000000" step="0.01" placeholder="e.g. 1,250" required></label><label>WRITING STYLE<select id="tone"><option>Professional & warm</option><option>Short & direct</option><option>Premium & polished</option></select></label></div><div class="generate-row"><span class="lock-note">♧ <span id="privacy-note">Your drafts stay in this browser.</span></span><button type="submit" class="primary-button" id="generate"><span>✦</span> Create my proposal <span>→</span></button></div></form></section>
+<aside class="tips-panel"><span class="tips-icon">☀</span><span class="eyebrow">THE BIDWELL WAY</span><h3>You bring the expertise.<br>We help put it into words.</h3><p>The best bids are specific. Give your draft a head start with:</p><ul><li><span>✓</span> Property size and type</li><li><span>✓</span> Cleaning frequency</li><li><span>✓</span> Special requests or priorities</li><li><span>✓</span> Your price and what’s included</li></ul><div class="tip-bottom">A helpful first draft. Always review<br>the details before you hit send.</div></aside></div>
+<section id="result-panel" class="result-panel" hidden><div class="panel-title"><div><span class="circle-step">2</span><h2>Your next opportunity, on paper.</h2></div><span class="draft-label">DRAFT · REVIEW BEFORE SENDING</span></div><div class="document-toolbar"><span id="result-kind">Commercial cleaning proposal</span><div><button data-action="copy">Copy</button><button data-action="save">Save draft</button><button data-action="download">Download</button><button data-action="print">Print / PDF</button></div></div><label class="sr-only" for="result">Edit your document</label><textarea id="result" aria-label="Edit your document" spellcheck="true"></textarea><form id="refine-form" class="refine-form"><label class="sr-only" for="refine">Refine this draft</label><input id="refine" maxlength="1000" placeholder="Ask for a change, e.g. make the opening more concise" required><button class="primary-button" id="refine-button">Refine with AI <span>↑</span></button></form><p class="result-note" id="refine-note">You can edit the draft directly. AI refinement becomes available when the site’s AI service is connected.</p></section>
+<div class="bottom-strip"><span>✦ <strong>Made for independent cleaning businesses.</strong></span><button class="text-button" data-action="plans">Want a bid system built for you? Explore our setup package ↗</button></div>
+</section>
+<section id="saved-view" class="view" hidden><div class="section-intro"><span class="eyebrow green">YOUR WORK, ALL TOGETHER</span><h1>Room for <em>great opportunities.</em></h1><p>Saved on this device. Pick up where you left off.</p></div><div id="saved-list"></div></section>
+<section id="templates-view" class="view" hidden><div class="section-intro"><span class="eyebrow green">A HEAD START, BUILT IN</span><h1>Skip the <em>blank page.</em></h1><p>Choose a job type and make the example your own. Sample prices are placeholders, not market estimates.</p></div><div id="template-list" class="template-grid"></div></section>
+<footer><span>© <span id="year"></span> Bidwell. A little polish goes a long way.</span><div><button data-action="profile">Business profile</button><button data-action="privacy">Privacy</button><button data-action="help">Help & FAQ</button></div></footer>
+</main></div>
+<dialog id="modal"><div class="modal-top"><span class="brand small">bidwell.</span><button id="close-modal" aria-label="Close dialog">✕</button></div><div id="modal-content"></div></dialog><div id="toast" role="status" aria-live="polite"></div><div id="print-document"></div>
+</body></html>
