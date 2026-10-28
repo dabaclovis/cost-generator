@@ -1,0 +1,412 @@
+:root {
+  --green: #215343;
+  --ink: #263a34;
+  --muted: #707c75;
+  --line: #dfe6df;
+  --bg: #f4f5f1;
+  --sage: #e8eee8;
+  --orange: #b5794e;
+  --font: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline-color: #9c795d;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline-color: #78968a;
+}
+
+.sidebar {
+  background: #e3ede5;
+  overflow-y: auto;
+}
+
+.sidebar > * {
+  flex-shrink: 0;
+}
+
+.profile > span:nth-child(2) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.brand {
+  letter-spacing: -1.8px;
+}
+
+.brand-icon {
+  border-radius: 10px 10px 10px 3px;
+}
+
+.workspace-avatar {
+  background: #e7ece7;
+  border-color: #d7e0d8;
+  color: #536e60;
+}
+
+.new-button,
+.primary-button {
+  box-shadow: 0 2px 5px #1c3e3212;
+  transition: background-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.new-button:hover,
+.primary-button:hover {
+  background: #315a4e;
+  box-shadow: 0 4px 10px #1c3e321c;
+  transform: translateY(-1px);
+}
+
+.nav-item.active {
+  background: #d2e4d7;
+}
+
+.nav-item:hover {
+  background: #e8eee8;
+}
+
+.upgrade-card {
+  background: #dfeadd;
+}
+
+.upgrade-card button {
+  background: #f8faf8;
+  border-color: #d7e1d8;
+}
+
+.topbar {
+  background: #fbfcfa;
+}
+
+h1 {
+  letter-spacing: -2.2px;
+}
+
+h1 em {
+  color: #587d67;
+}
+
+.intro p,
+.studio-heading p {
+  color: #737e77;
+}
+
+.orbit {
+  border-color: #e1e8e1;
+}
+
+.art-paper {
+  background: #fff;
+  border-color: #dfe5df;
+  box-shadow: 0 15px 25px #263b350d;
+}
+
+.art-star {
+  color: #be8258;
+}
+
+.art-check {
+  background: #78927f;
+}
+
+.task-card {
+  border-color: #e3e8e2;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #263b3506;
+  transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+
+.task-card:hover {
+  border-color: #a7b9aa;
+  box-shadow: 0 7px 18px #263b350d;
+}
+
+.task-card.selected {
+  border-color: #789b85;
+  background: #e1eee3;
+  box-shadow: inset 3px 0 #668675, 0 3px 10px #294b3c0c;
+}
+
+.task-icon {
+  background: #d8e9dc;
+  color: #47735a;
+}
+
+.task-icon.peach {
+  background: #f4e5d7;
+  color: #a46c40;
+}
+
+.task-icon.lavender {
+  background: #e7e4f0;
+  color: #7a6c97;
+}
+
+.task-check {
+  background: #668273;
+}
+
+.task-card p,
+.task-link,
+.small-muted,
+.composer-footer,
+.lock-note {
+  color: #737e77;
+}
+
+.task-link > span,
+.small-spark {
+  color: #718b79;
+}
+
+.composer,
+.result-panel,
+.template-card,
+.saved-card,
+.empty-state {
+  border-color: #e3e8e2;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px #263b3506;
+}
+
+.panel-title {
+  border-bottom-color: #edf0ec;
+}
+
+.circle-step {
+  background: #f1f5f1;
+  border-color: #dfe7df;
+  color: #617c6a;
+}
+
+.form-fields label {
+  color: #68786d;
+}
+
+.form-fields input,
+.form-fields select {
+  background: #fbfcfa;
+  border-color: #e0e6df;
+  color: #344a3f;
+}
+
+.form-fields input:focus,
+.form-fields select:focus {
+  border-color: #9aafa0;
+  outline-color: #78968a;
+}
+
+.tips-panel {
+  background: #e2ecdf;
+  border-color: #d2e1cf;
+}
+
+.tips-panel .eyebrow,
+.tips-panel li,
+.tips-panel li span {
+  color: #718575;
+}
+
+.tips-panel p {
+  color: #737e77;
+}
+
+.tip-bottom {
+  border-top-color: #dfe6de;
+}
+
+.document-toolbar {
+  background: #f1f4ef;
+}
+
+.document-toolbar button {
+  border-color: #dce5dc;
+}
+
+.demo-badge {
+  color: #63796a;
+  border-color: #e0e7e0;
+}
+
+.demo-badge i {
+  background: #78927f;
+}
+
+dialog {
+  border-color: #dfe7df;
+}
+
+dialog p,
+dialog li {
+  color: #65796c;
+}
+
+.workspace-tools,
+.proposal-tools,
+.saved-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.workspace-tools {
+  margin-top: 24px;
+}
+
+.workspace-tools + .editor-grid {
+  margin-top: 14px;
+}
+
+.tool-button {
+  padding: 9px 12px;
+  border: 1px solid #d2dfd4;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 12px;
+}
+
+.tool-button:hover {
+  background: #eaf2eb;
+  border-color: #789b85;
+}
+
+#recovery-status,
+#proposal-summary {
+  color: #596e60;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+#recovery-status {
+  margin-left: auto;
+}
+
+.proposal-tools {
+  align-items: flex-end;
+  padding: 18px;
+  background: #eaf0e7;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.proposal-tools label,
+.saved-actions label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #516958;
+  font-size: 11px;
+}
+
+.proposal-tools label:first-child {
+  flex: 1 1 220px;
+}
+
+.proposal-tools input,
+.proposal-tools select,
+.saved-actions select {
+  min-height: 36px;
+  padding: 8px 10px;
+  border: 1px solid #ccd9cf;
+  border-radius: 5px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.saved-card > div:first-child {
+  min-width: 0;
+  flex: 1 1 240px;
+  overflow-wrap: anywhere;
+}
+
+.saved-card {
+  flex-wrap: wrap;
+}
+
+.saved-actions {
+  align-items: flex-end;
+  flex: 1 1 360px;
+}
+
+.saved-actions button {
+  margin: 0;
+}
+
+.calculator-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 16px;
+}
+
+.calculator-result {
+  padding: 16px;
+  border: 1px solid #cbdccc;
+  border-radius: 8px;
+  background: #e1eee3;
+  color: #264d37;
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+#template-list {
+  margin-top: 20px;
+}
+
+.template-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.template-card .primary-button {
+  margin-top: auto;
+}
+
+.template-card .template-price {
+  font-size: 11px;
+  color: #596e60;
+  margin-bottom: 20px;
+}
+
+#template-count {
+  padding: 10px 0;
+  font-size: 12px;
+  color: #516958;
+}
+
+@media (max-width: 600px) {
+  #recovery-status {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  .calculator-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .proposal-tools label,
+  .saved-actions {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .new-button,
+  .primary-button,
+  .task-card {
+    transition: none;
+  }
+}

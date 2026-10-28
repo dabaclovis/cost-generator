@@ -10,6 +10,16 @@ Open `index.html` in a browser, or serve this directory from your existing web h
 
 For a local HTTP preview with PHP 8.1+: `php -S 127.0.0.1:8080`.
 
+## Local bidding tools
+
+- **Template library:** 12 searchable recurring-cleaning starting points cover offices, retail, coworking, fitness studios, tutoring centers, apartment common areas, community halls, warehouse offices, showrooms, restaurant front-of-house areas, salons, and financial branches. Search by property type or scope text. Each fills the studio with sample client details, notes, and a monthly placeholder price; verify and replace these before quoting. You can then choose Proposal, Follow-up, or Scope of work. Specialized and restricted work is excluded unless separately scoped and qualified.
+- **Pricing calculator:** estimates monthly labor as staff-hours per visit × visits per week × 52 / 12 × loaded hourly labor cost. It adds monthly supplies, applies overhead to direct costs, then divides by (1 − target profit margin). Margin is not markup. Inputs are illustrative defaults; taxes are excluded. Choose **Use monthly price** to fill the studio price, then regenerate any existing draft to reflect it.
+- **My proposals:** search titles, clients, and document text; filter by Draft, Sent, Won, or Lost. Rename changes the saved title, not the client or document. Duplicate creates a separate Draft. Status tracking never sends a document. Up to 50 proposals are retained; saving a new one at capacity requires deleting an existing one rather than silently discarding it.
+- **Business details:** save your business name, contact name, email, phone, website, and address. New documents include these details. Existing documents are not automatically changed. Contacts are appended locally when generating; refinement sends the entire edited draft, including any contacts, to AI when connected.
+- **Draft recovery:** unfinished notes, selected document type, client, price, tone, document edits, and refinement instructions recover after a refresh in the same browser. **New proposal** intentionally clears this workspace, without deleting saved proposals. Unavailable browser storage is reported in the interface.
+- **Backup and restore:** under **My proposals**, export a versioned JSON backup of saved proposals and your profile. Keep backups private: they contain client and business data. Import accepts a valid Bidwell version 1 backup (maximum 10 MB, 50 proposals) and asks before replacing saved proposals and your profile. The open workspace remains an unsaved draft. Malformed files are rejected without changing existing data. The unfinished workspace is not included in exported backups; save your draft first.
+- **Privacy → Clear all local data** removes saved proposals, the business profile, and recovered workspace data. None of these tools syncs data across devices.
+
 ## Activate AI and the sales contact
 
 Configure these variables in the PHP server environment, outside the public web root:
