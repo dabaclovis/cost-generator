@@ -6,6 +6,8 @@ A responsive, dependency-free HTML/CSS/JavaScript proposal studio for commercial
 
 Open `index.html` in a browser, or serve this directory from your existing web host. The free template studio works without API keys, PHP, npm, or a build step. Example → Create → edit → Save / Download / Print to PDF. Saved drafts are local to that browser, capped at the latest 50. Downloads are plain text; PDF uses the browser print dialog.
 
+`sitemap.xml` lists the single public application URL. Replace `YOUR-DOMAIN-HERE` in that file with the production hostname before submitting the sitemap to search engines. The app has no separate crawlable routes; its workspace views are client-side sections.
+
 For a local HTTP preview with PHP 8.1+: `php -S 127.0.0.1:8080`.
 
 ## Activate AI and the sales contact
